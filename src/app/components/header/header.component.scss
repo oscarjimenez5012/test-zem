@@ -1,0 +1,27 @@
+:host {
+	display: block;
+	margin: auto;
+	max-width: 1200px;
+	background: transparent;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
+}
+.nav__section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+}
+
+.nav__list-item {
+	margin-right: 2em;
+}

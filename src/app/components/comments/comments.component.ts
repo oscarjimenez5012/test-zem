@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'comments',
+  selector: 'zemoga-comments',
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.scss']
 })

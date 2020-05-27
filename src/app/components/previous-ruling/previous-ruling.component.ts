@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'previous-ruling',
+  selector: 'zemoga-previous-ruling',
   templateUrl: './previous-ruling.component.html',
   styleUrls: ['./previous-ruling.component.scss']
 })

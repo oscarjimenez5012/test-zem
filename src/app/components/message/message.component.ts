@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'message',
+  selector: 'zemoga-message',
   templateUrl: './message.component.html',
   styleUrls: ['./message.component.scss']
 })
