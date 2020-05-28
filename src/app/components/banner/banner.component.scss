@@ -28,7 +28,7 @@
 	width: 100%;
 }
 .banner-opinion__container {
-	max-width: 15em;
+	max-width: 35em;
 	justify-content: center;
 	align-items: baseline;
 	display: flex;
@@ -39,7 +39,37 @@
 	flex: 1;
 }
 .banner-opinion__body {
-	padding: 1em 2em;
+	padding: 2em 4em 2em 1.5em;
+}
+
+.banner-opinion__title {
+	font-size: 48px;
+	line-height: 52px;
+	margin-bottom: 0.75em;
+	font-weight: 100;
+}
+.banner-opinion__text {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 1em;
+	font-weight: 100;
+}
+.banner-opinion__more-information {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 2em;
+	font-size: 14px;
+}
+.banner-opinion__wiki-image {
+	width: 14px;
+	margin-right: 0.5em;
+}
+.banner-opinion__link {
+	color: white;
+}
+.banner-opinion__your-vote {
+	font-weight: bold;
 }
 .banner-opinion__actions {
 	display: flex;
@@ -75,9 +105,28 @@
 	padding: 1em 0.5em 1em;
 	background: #0000005c;
 	color: white;
+	position: relative;
+	&::after {
+		content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 9px solid #0000005c;
+    position: absolute;
+    right: -9px;
+	}
 }
 .closing-in__date {
 	flex: 2;
-	padding: 1em 0.5em 1em;
+	padding: 0rem 0.5rem 0rem 1rem;
 	background: #ffffff8c;
+	font-size: 36px;
+	line-height: 36px;
+	display: flex;
+	align-items: center;
+	font-weight: 100;
+}
+.closing-in__date-number {
+	font-weight: normal;
 }
