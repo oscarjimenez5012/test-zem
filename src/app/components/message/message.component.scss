@@ -1,0 +1,33 @@
+:host {
+    display: block;
+    max-width: 1200px;
+    margin: 2em auto;
+    background: #ebebeb;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    .message__title {
+        
+    }
+    .message__subtitle {
+        font: bold 32px/36px Lato;
+    }
+}
+
+.message__description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.message__text {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.message__close {
+    border: none;
+}
