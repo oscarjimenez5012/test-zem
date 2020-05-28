@@ -34,7 +34,8 @@
 	width: 80%;
 }
 .previous-ruling__name {
-	font: 48px/52px Lato;
+	font-size: 48px;
+	line-height: 52px;
 }
 .previous-ruling__actions {
 	display: flex;
@@ -80,7 +81,8 @@
 	justify-content: flex-end;
 }
 .previous-ruling__percentage {
-	font: 24px/36px Lato;
+	font-size: 24px;
+	line-height: 36px;
 }
 .previous-ruling__hand-icon {
 	height: 1.5rem;
