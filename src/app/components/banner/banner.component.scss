@@ -2,7 +2,85 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	background: red;
-	height: 30em;
+	height: 45em;
 	z-index: -9999;
+}
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 100%;
+}
+
+.banner-image {
+	background-image: url("../../../assets/images/francisco.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner-opinion {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: auto;
+	max-width: 1200px;
+	width: 100%;
+}
+.banner-opinion__container {
+	max-width: 15em;
+	justify-content: center;
+	align-items: baseline;
+	display: flex;
+	flex-direction: column;
+	background: #000000ac;
+	color: white;
+	justify-self: center;
+	flex: 1;
+}
+.banner-opinion__body {
+	padding: 1em 2em;
+}
+.banner-opinion__actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.rotate-180 {
+	transform: rotate(180deg);
+}
+.banner-opinion__action {
+	padding: 0.7em 1em;
+	flex: 1;
+	border: none;
+	&.banner-opinion__action--like {
+		background: #2cbbb5;
+	}
+	&.banner-opinion__action--dislike {
+		background: #f4aa2a;
+	}
+}
+
+.banner-opinion__hand-icon {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.closing-in {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex: 0;
+}
+.closing-in__label {
+	flex: 1;
+	text-align: right;
+	padding: 1em 0.5em 1em;
+	background: #0000005c;
+	color: white;
+}
+.closing-in__date {
+	flex: 2;
+	padding: 1em 0.5em 1em;
+	background: #ffffff8c;
 }
