@@ -1,1 +1,41 @@
-<p>previous-ruling works!</p>
+<article [style.background-image]="'url(' + item.image + ')'" class="previous-ruling">
+	<div class="previous-ruling__body">
+		<div
+			[ngClass]="{'previous-ruling__tendency--positive': item.positiveVotes > item.negativeVotes, 'previous-ruling__tendency--negative': item.positiveVotes <= item.negativeVotes}">
+			<img *ngIf="item.positiveVotes > item.negativeVotes" class="rotate-180 previous-ruling__tendency-icon"
+				src="../../../assets/icons/hand.svg" alt="">
+			<img *ngIf="item.positiveVotes <= item.negativeVotes" class="previous-ruling__tendency-icon"
+				src="../../../assets/icons/hand.svg" alt="">
+		</div>
+		<div class="previous-ruling__profile">
+			<h3 class="previous-ruling__name">{{item.name}}</h3>
+			<span class="previous-ruling__date">{{item.date}} in {{item.category}}</span>
+			<span class="previous-ruling__description" *ngIf="!item.voted">{{item.description}}</span>
+			<span class="previous-ruling__description" *ngIf="item.voted">Thanks for voting!</span>
+			<div class="previous-ruling__actions">
+				<ng-container *ngIf="!item.voted">
+					<div class="previous-ruling__vote--positive">
+						<img class="rotate-180 previous-ruling__tendency-icon" src="../../../assets/icons/hand.svg" alt="">
+					</div>
+					<div class="previous-ruling__vote--negative">
+						<img class="previous-ruling__tendency-icon" src="../../../assets/icons/hand.svg" alt="">
+					</div>
+					<button class="previous-ruling__button">Vote now</button>
+				</ng-container>
+				<button *ngIf="item.voted" class="previous-ruling__button">Vote again</button>
+			</div>
+		</div>
+	</div>
+	<div class="previous-ruling__stadistics">
+		<div class="previous-ruling__stadistics--positive"
+			[style.width]="(item.positiveVotes/(item.positiveVotes + item.negativeVotes))*100+'%'">
+			<img class="rotate-180 previous-ruling__hand-icon" src="../../../assets/icons/hand.svg" alt="">
+			<span class="previous-ruling__percentage">{{item.positiveVotes | calculatePercentage: item.negativeVotes}}</span>
+		</div>
+		<div class="previous-ruling__stadistics--negative"
+			[style.width]="(item.negativeVotes/(item.positiveVotes + item.negativeVotes))*100+'%'">
+			<span class="previous-ruling__percentage">{{item.negativeVotes | calculatePercentage: item.positiveVotes}}</span>
+			<img class="previous-ruling__hand-icon" src="../../../assets/icons/hand.svg" alt="">
+		</div>
+	</div>
+</article>

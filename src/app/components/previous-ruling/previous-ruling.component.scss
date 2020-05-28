@@ -1,0 +1,89 @@
+.previous-ruling {
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 28em;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-top: 2em;
+	color: #fff;
+}
+.previous-ruling__body {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.previous-ruling__tendency--positive {
+	background: #2cbbb5;
+	padding: 0.5em;
+	margin-top: 0.5em;
+}
+.previous-ruling__tendency--negative {
+	background: #f4aa2a;
+	padding: 0.5em;
+	margin-top: 0.5em;
+}
+.previous-ruling__tendency-icon {
+	height: 1rem;
+	width: 1rem;
+}
+.previous-ruling__profile {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0em 2em 1em;
+	width: 80%;
+}
+.previous-ruling__name {
+	font: 48px/52px Lato;
+}
+.previous-ruling__actions {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 2em;
+}
+.previous-ruling__vote--positive {
+	background: #2cbbb5;
+	margin-right: 1em;
+	padding: 0.5em 0.75em;
+}
+.previous-ruling__vote--negative {
+	background: #f4aa2a;
+	margin-right: 1em;
+	padding: 0.5em 0.75em;
+}
+.previous-ruling__button {
+	border: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	padding: 1em 2em;
+}
+.previous-ruling__stadistics {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.previous-ruling__stadistics--positive {
+	padding: 1em 0.5em 1em;
+	background: #2cbbb5;
+	color: #fff;
+	opacity: 0.8;
+	display: flex;
+	align-items: center;
+}
+.previous-ruling__stadistics--negative {
+	padding: 1em 0.5em 1em;
+	background: #f4aa2a;
+	opacity: 0.8;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.previous-ruling__percentage {
+	font: 24px/36px Lato;
+}
+.previous-ruling__hand-icon {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin: 0 0.3em;
+}

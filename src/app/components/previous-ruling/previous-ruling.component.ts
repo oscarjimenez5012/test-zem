@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { PreviousRuling } from 'src/app/store/states/previous-rulings.state';
 
 @Component({
   selector: 'zemoga-previous-ruling',
   templateUrl: './previous-ruling.component.html',
-  styleUrls: ['./previous-ruling.component.scss']
+  styleUrls: ['./previous-ruling.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PreviousRulingComponent implements OnInit {
+export class PreviousRulingComponent {
 
+  @Input() item: PreviousRuling;
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

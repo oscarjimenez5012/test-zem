@@ -15,6 +15,7 @@ import { MessageComponent } from './components/message/message.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { PreviousRulingComponent } from './components/previous-ruling/previous-ruling.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { CalculatePercentagePipe } from './pipes/calculate-percentage.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommentsComponent } from './components/comments/comments.component';
     MessageComponent,
     BannerComponent,
     PreviousRulingComponent,
-    CommentsComponent
+    CommentsComponent,
+    CalculatePercentagePipe
   ],
   imports: [
     BrowserModule,

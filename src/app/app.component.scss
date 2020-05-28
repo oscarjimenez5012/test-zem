@@ -2,3 +2,15 @@
     bottom: 6em;
     position: relative;
 }
+.previous-ruling {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.previous-ruling__item {
+    width: 48%;
+}

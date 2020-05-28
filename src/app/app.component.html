@@ -2,7 +2,9 @@
 <main class="content">
   <zemoga-banner></zemoga-banner>
   <zemoga-message></zemoga-message>
-  <zemoga-previous-ruling></zemoga-previous-ruling>
+  <section class="previous-ruling">
+    <zemoga-previous-ruling class="previous-ruling__item" *ngFor="let item of previousRuling" [item]="item"></zemoga-previous-ruling>
+  </section>
   <zemoga-comments></zemoga-comments>
 </main>
 <zemoga-footer></zemoga-footer>
