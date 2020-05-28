@@ -1,0 +1,19 @@
+:host {
+	display: block;
+	margin: auto;
+	padding: 2em 0;
+	max-width: 1200px;
+	border-top: 1px dotted #000;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_link {
+	color: gray;
+	text-decoration: none;
+	margin-right: 1em;
+}
