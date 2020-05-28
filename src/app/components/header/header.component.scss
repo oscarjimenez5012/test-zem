@@ -1,14 +1,15 @@
 :host {
-	display: block;
-	margin: auto;
-	max-width: 1200px;
-	background: transparent;
+    display: block;
+    background: linear-gradient(180deg, #000000d6, #00000008);
 }
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+    max-width: 1200px;
+    color: white;
+    margin: auto;
 }
 .nav__section {
 	display: flex;
