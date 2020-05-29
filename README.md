@@ -12,4 +12,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 # Comments
 
-Excellent test, I develop it on angular 9, SCSS as preprocessor and flexbox to the layout, compatible with modern browsers (Chrome, Firefox, Edge), also is deploy in AWS in order to let you inspect the app, I send the link to the recluter, thanks a lot.
+Excellent test, I develop it on angular 9, SCSS as preprocessor and flexbox for the layout, compatible with modern browsers (Chrome, Firefox, Edge), also is deploy in AWS in order to let you inspect the app, I send the link to the recluter, thanks a lot.
