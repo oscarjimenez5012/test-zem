@@ -3,7 +3,7 @@
   <zemoga-banner></zemoga-banner>
   <zemoga-message></zemoga-message>
   <section class="previous-ruling">
-    <zemoga-previous-ruling class="previous-ruling__item" *ngFor="let item of previousRuling" [item]="item"></zemoga-previous-ruling>
+    <zemoga-previous-ruling class="previous-ruling__item" *ngFor="let item of previousRuling" [item]="item" (selectVote)=selectVote($event) (voteAgain)="voteAgain($event)"></zemoga-previous-ruling>
   </section>
   <zemoga-comments></zemoga-comments>
 </main>

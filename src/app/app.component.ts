@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { PreviousRuling } from './store/states/previous-rulings.state';
+import { PreviousRulingsActions } from './store/actions/previous-rulings.actions';
+import { AppState } from './store/app.state';
+import { Store, select } from '@ngrx/store';
+import { getPreviousRulings } from './store/selectors/previous-rulings.selectors';
 
 @Component({
   selector: 'app-root',
@@ -7,57 +11,34 @@ import { PreviousRuling } from './store/states/previous-rulings.state';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'zemoga-test';
   public previousRuling: PreviousRuling[];
-  constructor() { }
+  constructor(private store: Store<AppState>) {
+    let dataInStorage = sessionStorage.getItem('previousRuling');
+      if (!!dataInStorage) {
+        console.log('dataInStorage', JSON.parse(dataInStorage));
+        this.store.dispatch(new PreviousRulingsActions.PreviousRulingsSuccess((JSON.parse(dataInStorage))));
+      } else {
+        this.store.dispatch(new PreviousRulingsActions.PreviousRulings())
+      }
+  }
 
   ngOnInit(): void {
-    this.previousRuling = [
-      {
-        positiveVotes: 64,
-        negativeVotes: 36,
-        image: '../../../assets/images/Kanye.jpg',
-        id: 0,
-        name: 'Kanye West',
-        description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-        date: 22,
-        category: 'Entertaiment',
-        voted: false
+    
+    this.store.pipe(select(getPreviousRulings))
+      .subscribe((previousRuling) => {
+        this.previousRuling = previousRuling;
+        const hasVotes = this.previousRuling.some((item) => item.negativeVotes !== 0 || item.positiveVotes !== 0);
+        if(hasVotes) {
+          sessionStorage.setItem('previousRuling', JSON.stringify(this.previousRuling));
+        } 
+      })
+  }
 
-      },
-      {
-        positiveVotes: 2,
-        negativeVotes: 6,
-        image: '../../../assets/images/Mark.jpg',
-        id: 1,
-        name: 'Mark West',
-        description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-        date: 22,
-        category: 'Entertaiment',
-        voted: false
-      },
-      {
-        positiveVotes: 36,
-        negativeVotes: 64,
-        image: '../../../assets/images/Cristina.jpg',
-        id: 1,
-        name: 'Cristina West',
-        description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-        date: 22,
-        category: 'Entertaiment',
-        voted: true
-      },
-      {
-        positiveVotes: 64,
-        negativeVotes: 36,
-        image: '../../../assets/images/Malala.jpg',
-        id: 1,
-        name: 'Malala West',
-        description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-        date: 22,
-        category: 'Entertaiment',
-        voted: true
-      }
-    ]
+  public selectVote(vote) {
+    this.store.dispatch(new PreviousRulingsActions.VoteForRulings(vote))
+  }
+
+  public voteAgain(id) {
+    this.store.dispatch(new PreviousRulingsActions.VoteAgainForRulings(id))
   }
 }
