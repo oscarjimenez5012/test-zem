@@ -11,8 +11,10 @@
 }
 .previous-ruling__body {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(0deg, black, transparent);
+	padding-top: 10em;
 }
 .previous-ruling__tendency--positive {
 	background: #2cbbb5;

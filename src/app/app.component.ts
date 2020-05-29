@@ -15,7 +15,6 @@ export class AppComponent {
   constructor(private store: Store<AppState>) {
     let dataInStorage = sessionStorage.getItem('previousRuling');
       if (!!dataInStorage) {
-        console.log('dataInStorage', JSON.parse(dataInStorage));
         this.store.dispatch(new PreviousRulingsActions.PreviousRulingsSuccess((JSON.parse(dataInStorage))));
       } else {
         this.store.dispatch(new PreviousRulingsActions.PreviousRulings())
