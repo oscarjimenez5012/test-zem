@@ -22,6 +22,9 @@
 	justify-content: space-between;
 	align-items: center;
 }
+.nav__section--mobile {
+	display: none;
+}
 .nav__list {
 	display: flex;
 	justify-content: space-between;
