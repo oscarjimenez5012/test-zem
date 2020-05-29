@@ -3,7 +3,7 @@
 	background-size: cover;
 	background-position: right;
 	display: flex;
-	height: 45em;
+	height: 35em;
 	flex-direction: column;
 	justify-content: flex-end;
 	margin-top: 2em;
@@ -38,8 +38,9 @@
 	width: 80%;
 }
 .previous-ruling__name {
-	font-size: 48px;
-	line-height: 52px;
+	font-size: 42px;
+	line-height: 48px;
+	font-weight: 100;
 }
 .previous-ruling__actions {
 	display: flex;
@@ -48,12 +49,14 @@
 	margin-top: 2em;
 }
 .previous-ruling__date {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
 .previous-ruling__vote--positive {
 	background: var(--vote-positive);
 	margin-right: 1em;
-	padding: 0.5em 0.75em;
+	padding: 0.5em 0.7em;
 	cursor: pointer;
 }
 .selected {
@@ -62,7 +65,7 @@
 .previous-ruling__vote--negative {
 	background: var(--vote-negative);
 	margin-right: 1em;
-	padding: 0.5em 0.75em;
+	padding: 0.5em 0.7em;
 	cursor: pointer;
 }
 .previous-ruling__button {
@@ -75,6 +78,12 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	height: 3em;
+}
+.previous-ruling__description {
+	margin-bottom: 2em;
+	font-weight: 100;
+	line-height: 22px;
 }
 .previous-ruling__stadistics--positive {
 	padding: 1em 0;
@@ -93,7 +102,7 @@
 	justify-content: flex-end;
 }
 .previous-ruling__percentage {
-	font-size: 24px;
+	font-size: 32px;
 	line-height: 36px;
 }
 .previous-ruling__hand-icon {

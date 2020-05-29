@@ -1,6 +1,7 @@
 <main class="content">
 	<zemoga-banner></zemoga-banner>
 	<zemoga-message></zemoga-message>
+	<h2 class="votes-title">Votes</h2>
 	<section class="previous-ruling">
 		<zemoga-previous-ruling class="previous-ruling__item" *ngFor="let item of previousRuling" [item]="item"
 			(selectVote)=selectVote($event) (voteAgain)="voteAgain($event)"></zemoga-previous-ruling>

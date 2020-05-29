@@ -2,7 +2,7 @@
 	display: block;
 	margin: auto;
 	padding: 2em 0;
-	max-width: 1200px;
+	max-width: var(--max-width);
 	border-top: 1px dotted var(--ui-black);
 }
 
@@ -13,15 +13,21 @@
 }
 
 .footer_link {
-	color: gray;
+	color: var(--ui-gray);
 	text-decoration: none;
-	margin-right: 1em;
+	margin-right: 2em;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
 
 .footer__social-networks {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	text-decoration: none;
+	color: var(--ui-gray);
+	font-size: 12px;
+	letter-spacing: 1px;
 	& > * {
 		margin-left: 1em;
 	}

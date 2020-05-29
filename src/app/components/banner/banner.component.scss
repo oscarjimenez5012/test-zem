@@ -1,5 +1,3 @@
-@import "../../../assets/styles/colors";
-
 :host {
 	position: relative;
 	display: block;
@@ -26,11 +24,11 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin: auto;
-	max-width: 1200px;
+	max-width: var(--max-width);
 	width: 100%;
 }
 .banner-opinion__container {
-	max-width: 35em;
+	max-width: 31em;
 	justify-content: center;
 	align-items: baseline;
 	display: flex;
@@ -41,27 +39,28 @@
 	flex: 1;
 }
 .banner-opinion__body {
-	padding: 2em 4em 2em 1.5em;
+	padding: 2em 4em 2em 2em;
 }
 
 .banner-opinion__title {
-	font-size: 48px;
-	line-height: 52px;
-	margin-bottom: 0.75em;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 0.5em;
 	font-weight: 100;
 }
 .banner-opinion__text {
-	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 1em;
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 1.35em;
 	font-weight: 100;
 }
 .banner-opinion__more-information {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 	font-size: 14px;
+	letter-spacing: 1px;
 }
 .banner-opinion__wiki-image {
 	width: 14px;
@@ -72,6 +71,7 @@
 }
 .banner-opinion__your-vote {
 	font-weight: bold;
+	font-size: 20px;
 }
 .banner-opinion__actions {
 	display: flex;
@@ -80,9 +80,10 @@
 	width: 100%;
 }
 .banner-opinion__action {
-	padding: 0.7em 1em;
+	padding: 1.3em 1em;
 	flex: 1;
 	border: none;
+	opacity: 0.9;
 	&.banner-opinion__action--like {
 		background: var(--vote-positive);
 	}
@@ -92,8 +93,8 @@
 }
 
 .banner-opinion__hand-icon {
-	height: 1.5rem;
-	width: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
 }
 .closing-in {
 	display: flex;

@@ -1,6 +1,6 @@
 :host {
 	display: block;
-	max-width: 1200px;
+	max-width: var(--max-width);
 	margin: 2em auto;
 	background: var(--message-background);
 }
@@ -13,10 +13,12 @@
 	.message__title {
 		letter-spacing: 1px;
 		font-weight: 100;
+		font-size: 20px;
 	}
 	.message__subtitle {
-		font-size: 32px;
+		font-size: 36px;
 		line-height: 36px;
+		font-weight: bold;
 	}
 }
 
@@ -28,6 +30,8 @@
 .message__text {
 	flex: 1;
 	margin: 0 1em;
+	font-size: 14px;
+	line-height: 22px;
 }
 
 .message__close {

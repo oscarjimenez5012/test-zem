@@ -1,16 +1,23 @@
 .content {
-	bottom: 6em;
+	bottom: 6.5em;
 	position: relative;
 }
 .previous-ruling {
-	max-width: 1200px;
+	max-width: var(--max-width);
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
-
+.votes-title {
+	max-width: var(--max-width);
+	margin: auto;
+	color: var(--ui-gray);
+	font-weight: 100;
+	font-size: 40px;
+	padding: 0.2em 0;
+}
 .previous-ruling__item {
 	width: 48%;
 }
