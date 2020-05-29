@@ -1,15 +1,20 @@
 :host {
-    display: block;
-    background: linear-gradient(180deg, #000000d6, #00000008);
+	display: block;
+	background: linear-gradient(180deg, #000000d6, #00000008);
+	position: relative;
+	z-index: 1000;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 0;
-    max-width: 1200px;
-    color: white;
-    margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
+	max-width: 1200px;
+	color: white;
+	margin: auto;
+}
+.header__title {
+	cursor: pointer;
 }
 .nav__section {
 	display: flex;
@@ -25,4 +30,5 @@
 
 .nav__list-item {
 	margin-right: 2em;
+	cursor: pointer;
 }

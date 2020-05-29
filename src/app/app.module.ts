@@ -22,6 +22,10 @@ import { CommentsComponent } from './components/comments/comments.component';
 
 /* Pipes */
 import { CalculatePercentagePipe } from './pipes/calculate-percentage.pipe';
+import { MainComponent } from './components/main/main.component';
+import { PastTrialsComponent } from './components/past-trials/past-trials.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { CalculatePercentagePipe } from './pipes/calculate-percentage.pipe';
     BannerComponent,
     PreviousRulingComponent,
     CommentsComponent,
-    CalculatePercentagePipe
+    CalculatePercentagePipe,
+    MainComponent,
+    PastTrialsComponent,
+    HowItWorksComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
