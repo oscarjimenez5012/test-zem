@@ -2,7 +2,7 @@
 	display: block;
 	max-width: 1200px;
 	margin: 2em auto;
-	background: #ebebeb;
+	background: var(--message-background);
 }
 
 .message {
@@ -32,4 +32,18 @@
 
 .message__close {
 	border: none;
+}
+
+@media (max-width: 1024px) {
+	.message {
+		flex-direction: column;
+	}
+
+	.message__description {
+		margin-bottom: 1em;
+	}
+
+	.message__close {
+		display: none;
+	}
 }

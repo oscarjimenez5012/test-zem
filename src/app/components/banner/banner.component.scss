@@ -1,3 +1,5 @@
+@import "../../../assets/styles/colors";
+
 :host {
 	position: relative;
 	display: block;
@@ -33,8 +35,8 @@
 	align-items: baseline;
 	display: flex;
 	flex-direction: column;
-	background: #000000ac;
-	color: white;
+	background: var(--banner-opinion-background);
+	color: var(--ui-white);
 	justify-self: center;
 	flex: 1;
 }
@@ -66,7 +68,7 @@
 	margin-right: 0.5em;
 }
 .banner-opinion__link {
-	color: white;
+	color: var(--ui-white);
 }
 .banner-opinion__your-vote {
 	font-weight: bold;
@@ -82,10 +84,10 @@
 	flex: 1;
 	border: none;
 	&.banner-opinion__action--like {
-		background: #2cbbb5;
+		background: var(--vote-positive);
 	}
 	&.banner-opinion__action--dislike {
-		background: #f4aa2a;
+		background: var(--vote-negative);
 	}
 }
 
@@ -103,25 +105,25 @@
 	flex: 1;
 	text-align: right;
 	padding: 1em 0.5em 1em;
-	background: #0000005c;
-	color: white;
+	background: var(--closing-in-label);
+	color: var(--ui-white);
 	position: relative;
 	text-transform: uppercase;
 	&::after {
 		content: "";
-    width: 0;
-    height: 0;
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 9px solid #0000005c;
-    position: absolute;
-    right: -9px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-bottom: 7px solid transparent;
+		border-left: 9px solid var(--closing-in-triangle);
+		position: absolute;
+		right: -9px;
 	}
 }
 .closing-in__date {
 	flex: 2;
 	padding: 0rem 0.5rem 0rem 1rem;
-	background: #ffffff8c;
+	background: var(--closing-in-date-background);
 	font-size: 36px;
 	line-height: 36px;
 	display: flex;
@@ -130,4 +132,24 @@
 }
 .closing-in__date-number {
 	font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+	.banner-opinion__container {
+		margin: 5em 1em 0 1em;
+	}
+	.banner-image {
+		background-position-x: 85%;
+	}
+	.banner-opinion__title {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.banner-opinion__body {
+		padding: 1em;
+		text-align: center;
+	}
+	.banner-opinion__more-information {
+		justify-content: center;
+	}
 }

@@ -3,7 +3,7 @@
 	margin: auto;
 	padding: 2em 0;
 	max-width: 1200px;
-	border-top: 1px dotted #000;
+	border-top: 1px dotted var(--ui-black);
 }
 
 .footer {
@@ -24,5 +24,24 @@
 	align-items: center;
 	& > * {
 		margin-left: 1em;
+	}
+}
+
+@media (max-width: 1024px) {
+	.footer {
+		justify-content: space-around;
+	}
+	.footer__links {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer_link {
+		margin-bottom: 0.25em;
+	}
+	.footer__social-networks {
+		flex-direction: column;
+		& > * {
+			margin-bottom: 0.25em;
+		}
 	}
 }

@@ -19,14 +19,39 @@
 		opacity: 0.2;
 	}
 }
-
 .comments__text {
 	font-size: 32px;
 	line-height: 36px;
 	margin-left: 1em;
 }
 .comments__button {
-	border: 2px solid #000;
+	border: 2px solid var(--ui-black);
 	padding: 1em 2em;
 	margin-right: 2em;
+}
+
+@media (max-width: 1024px) {
+	:host {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 10em;
+		margin: 0;
+		top:0;
+		&::after {
+			content: "";
+			height: 10em;
+			width: 100%;
+			opacity: 0.2;
+		}
+	}
+	.comments__text {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 0.5em;
+	}
+	.comments__button {
+		margin-right: 0;
+		width: 90%;
+	}
 }

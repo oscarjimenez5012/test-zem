@@ -6,7 +6,7 @@
 		"id": 0,
 		"name": "Kanye West",
 		"description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-		"date": 22,
+		"date": 1,
 		"category": "Entertaiment",
 		"voted": false
 	},
@@ -17,7 +17,7 @@
 		"id": 1,
 		"name": "Mark Zuckerberg",
 		"description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-		"date": 22,
+		"date": 1,
 		"category": "Business",
 		"voted": false
 	},
@@ -28,9 +28,9 @@
 		"id": 2,
 		"name": "Cristina Fernández de Kirchner",
 		"description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-		"date": 22,
+		"date": 1,
 		"category": "Politics",
-		"voted": true
+		"voted": false
 	},
 	{
 		"positiveVotes": 0,
@@ -39,8 +39,8 @@
 		"id": 3,
 		"name": "Malala Yousafzai",
 		"description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-		"date": 22,
+		"date": 1,
 		"category": "Entertaiment",
-		"voted": true
+		"voted": false
 	}
 ]

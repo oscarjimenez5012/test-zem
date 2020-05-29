@@ -1,6 +1,7 @@
 :host {
 	display: block;
 	background: linear-gradient(180deg, #000000d6, #00000008);
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2));
 	position: relative;
 	z-index: 1000;
 }
@@ -10,7 +11,7 @@
 	align-items: center;
 	padding: 2em 0;
 	max-width: 1200px;
-	color: white;
+	color: var(--ui-white);
 	margin: auto;
 }
 .header__title {
@@ -31,4 +32,20 @@
 .nav__list-item {
 	margin-right: 2em;
 	cursor: pointer;
+}
+@media (max-width: 1024px) {
+	.header {
+		justify-content: space-around;
+	}
+	.nav__section {
+		display: none;
+	}
+	.nav__section--mobile {
+		display: block;
+		svg {
+			fill: var(--ui-white);
+			height: 1.5em;
+			width: 1.5em;
+		}
+	}
 }

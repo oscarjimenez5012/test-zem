@@ -7,22 +7,23 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	margin-top: 2em;
-	color: #fff;
+	color: var(--ui-white);
 }
 .previous-ruling__body {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	background: linear-gradient(0deg, black, transparent);
+	background: linear-gradient(0deg, var(--ui-black), transparent);
+	background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0));
 	padding-top: 10em;
 }
 .previous-ruling__tendency--positive {
-	background: #2cbbb5;
+	background: var(--vote-positive);
 	padding: 0.5em;
 	margin-top: 0.5em;
 }
 .previous-ruling__tendency--negative {
-	background: #f4aa2a;
+	background: var(--vote-negative);
 	padding: 0.5em;
 	margin-top: 0.5em;
 }
@@ -46,25 +47,28 @@
 	align-items: center;
 	margin-top: 2em;
 }
+.previous-ruling__date {
+	margin-bottom: 1em;
+}
 .previous-ruling__vote--positive {
-	background: #2cbbb5;
+	background: var(--vote-positive);
 	margin-right: 1em;
 	padding: 0.5em 0.75em;
 	cursor: pointer;
 }
 .selected {
-	border: 2px solid white;
+	border: 2px solid var(--ui-white);
 }
 .previous-ruling__vote--negative {
-	background: #f4aa2a;
+	background: var(--vote-negative);
 	margin-right: 1em;
 	padding: 0.5em 0.75em;
 	cursor: pointer;
 }
 .previous-ruling__button {
-	border: 1px solid #fff;
+	border: 1px solid var(--ui-white);
 	background: transparent;
-	color: #fff;
+	color: var(--ui-white);
 	padding: 1em 2em;
 }
 .previous-ruling__stadistics {
@@ -74,15 +78,15 @@
 }
 .previous-ruling__stadistics--positive {
 	padding: 1em 0;
-	background: #2cbbb5;
-	color: #fff;
+	background: var(--vote-positive);
+	color: var(--ui-white);
 	opacity: 0.8;
 	display: flex;
 	align-items: center;
 }
 .previous-ruling__stadistics--negative {
 	padding: 1em 0;
-	background: #f4aa2a;
+	background: var(--vote-negative);
 	opacity: 0.8;
 	display: flex;
 	align-items: center;

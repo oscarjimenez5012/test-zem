@@ -9,7 +9,7 @@
 		</div>
 		<div class="previous-ruling__profile">
 			<h3 class="previous-ruling__name">{{item.name}}</h3>
-			<span class="previous-ruling__date">{{item.date}} in {{item.category}}</span>
+			<span class="previous-ruling__date">{{item.date}} month ago in {{item.category}}</span>
 			<span class="previous-ruling__description" *ngIf="!item.voted">{{item.description}}</span>
 			<span class="previous-ruling__description" *ngIf="item.voted">Thanks for voting!</span>
 			<div class="previous-ruling__actions">

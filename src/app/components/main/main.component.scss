@@ -14,3 +14,12 @@
 .previous-ruling__item {
 	width: 48%;
 }
+
+@media (max-width: 1024px) {
+	.previous-ruling {
+		flex-direction: column;
+	}
+	.previous-ruling__item {
+		width: 100%;
+	}
+}
